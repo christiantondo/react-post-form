@@ -1,7 +1,13 @@
 import { useState } from 'react'
 
 function App() {
-	// const [count, setCount] = useState(0)
+
+	const postIniziale = {
+		author: "",
+		title: "",
+		body: "",
+		isPublic: true
+	};
 
 	return (
 		<>
