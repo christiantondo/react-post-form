@@ -1,13 +1,78 @@
 * {
 	box-sizing: border-box;
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 }
 
 body {
+	margin-top: 1rem;
 	font-family: sans-serif;
 	padding: 1rem;
-	background: #222;
+	background: #242424;
 	color: white;
+}
 
+.card {
+	max-width: 1200px;
+	padding: 2.5rem;
+	background-color: #2C803B;
+	border-radius: 20px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.align-center {
+	display: flex;
+	justify-content: center;
+}
+
+.data {
+	display: flex;
+	gap: 2rem;
+	list-style: none;
+	padding: 1rem;
+	font-size: 20px;
+}
+
+input {
+	padding: 10px;
+	margin: 10px;
+	border-radius: 15px;
+	border-style: none;
+}
+
+button {
+	color: white;
+	border-style: none;
+	background-color: #222222;
+	border-radius: 999px;
+	padding: 12px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #153a1d;
+}
+
+.checkbox {
+	zoom: 1.4;
+}
+
+p {
+	padding: 0.25rem;
+	font-size: 18px;
+}
+
+.post-section {
+	max-width: 1200px;
+	margin-top: 20px;
+	background-color: white;
+	height: 450px;
+	padding: 2.5rem;
+	border-radius: 20px;
 }

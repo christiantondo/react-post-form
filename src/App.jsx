@@ -33,19 +33,34 @@ function App() {
 
 	return (
 		<>
-			<h1>hello react world</h1>
-			<ul>
-				<li>author: {post.author}</li>
-				<li>title: {post.title}</li>
-				<li>body: {post.body}</li>
-				<li>isPublic: {post.isPublic ? "si" : "no"}</li>
-			</ul>
-			<form>
-				<input name="author" placeholder="author" value={post.author} onChange={updateProperty} />
-				<input name="title" placeholder="title" value={post.title} onChange={updateProperty} />
-				<input name="body" placeholder="body" value={post.body} onChange={updateProperty} />
-				<input name="isPublic" type="checkbox" checked={post.isPublic} onChange={updateIsPublic} />
-			</form>
+			<div className='card'>
+				<div className='container'>
+					<h1>New post</h1>
+					<div className='align-center'>
+						<ul className='data'>
+							<li>Author: {post.author}</li>
+							<li>Title: {post.title}</li>
+							<li>Body: {post.body}</li>
+						</ul>
+					</div>
+					<form>
+						<input name="author" placeholder="Author" value={post.author} onChange={updateProperty} />
+						<input name="title" placeholder="Title" value={post.title} onChange={updateProperty} />
+						<input name="body" placeholder="Body" value={post.body} onChange={updateProperty} />
+						<p>Public post: {post.isPublic ? "yes" : "no"}</p>
+						<input name="isPublic" type="checkbox" checked={post.isPublic} onChange={updateIsPublic} className='checkbox' />
+					</form>
+
+					<div>
+						<button>
+							Publish
+						</button>
+					</div>
+				</div>
+
+			</div>
+
+			<div className='post-section'></div>
 		</>
 	)
 }
