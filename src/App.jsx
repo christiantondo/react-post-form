@@ -22,10 +22,10 @@ function App() {
 				<li>isPublic: {post.isPublic}</li>
 			</ul>
 			<form>
-				<input name="author" placeholder="post.author" value="" />
-				<input name="title" placeholder="post.title" value="" />
-				<input name="body" placeholder="post.body" value="" />
-				<input name="isPublic" placeholder="post.isPublic" value="" />
+				<input name="author" placeholder="author" value="post.author" />
+				<input name="title" placeholder="title" value="post.title" />
+				<input name="body" placeholder="body" value="post.body" />
+				<input name="isPublic" placeholder="isPublic" value="post.isPublic" />
 			</form>
 		</>
 	)
